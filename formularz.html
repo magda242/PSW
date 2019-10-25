@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset  = "utf-8">
+<title> Formularz </title>
+</head>
+
+<body>
+        <h1 style="text-align:center"> SCHRONISKO DLA ZWIERZĄT WE WROCŁAWIU &ldquo;TOZ&rdquo; </h1>
+
+        <section>
+                <nav>
+                <hr>
+                <ul>
+                <li><a href="albumkotow.html"> Album kotów </a></li>
+                <li><a href="albumpsow.html"> Album psów </a></li>
+                <li><a href="kontakt.html"> Kontakt </a></li>
+                <li> <b> Formularz dla dobroczyńców </b> </li>
+                </ul>
+                <hr>
+                </nav>
+                </section>
+    <form action="mailto:schroniskowroclaw@gmail.com" method="post" enctype="text/plain">
+        <div>
+        <!--pola tekstowe -->
+        Podaj swoje imię<br><input name="Imię"><br>
+        Podaj swoje nazwisko<br><input name="Nazwisko">
+        <!-- RADIO -->
+        <p>Podaj swoją płeć:</p>
+        <input type="radio" name="Płeć" value="Kobieta">Kobieta
+        <input type="radio" name="Płeć" value="Mężczyzna">Mężczyzna
+        <!-- RADIO -->
+        <p>Ile masz lat?</p>
+        <input type="radio" name="Wiek" value="mniej niż 15">mniej niż 18<br>
+        <input type="radio" name="Wiek" value="więcej niż 18">więcej niż 18 
+        <!-- CHECKBOX -->
+        <p>W jaki sposób chcesz pomóc?</p>
+        <input type="checkbox" name="Pomoc" value="adopcja">Chcę zaadoptować zwierzaka<br>
+        <input type="checkbox" name="Pomoc" value="materialna">Chcę wspomóc schronisko materialnie<br>
+        <input type="checkbox" name="Pomoc" value="niematerialna">Chcę wspomóc schronisko niematerialnie<br>
+        <input type="checkbox" name="Pomoc" value="wolontariat">Chcę rozpocząć wolontariat w schronisku<br>
+        <input type="checkbox" name="Pomoc" value="inna">Inaczej (podaj jak):
+        <input name="Pomoc">
+        <!-- Lista rozwijalna (typ podstawowy) z zaznaczoną opcją domyślną -->
+        <p>Czy posiadasz doświadczenie w opiece nad zwierzętami</p>
+        <select name="Doswiadczenie">
+            <option selected>Tak, pomagałem/am już w schronisku.</option>
+            <option>Tak, mam własne zwierzęta.</option>
+            <option>Tak, miałem/am własne zwierzęta.</option>
+            <option>Nie.</option>
+        </select>
+
+        <br>
+        <p>Wymagane zgody:</p>
+        <input type="checkbox" name="zgoda" value="regulamin">Powierdzam zapoznanie sie z regulaminem dostpępnym <a href="regulamin.pdf"> tutaj </a><br>
+        <input type="checkbox" name="zgoda" value="rodo">Zgoda na przetwarzanie danych osobowych <a href="ftp://speedtest.tele2.net/../1MB.zip" download>tutaj(a tak naprawde tylko speedtest)</a><br>
+        <br><br><br>
+        <!-- Przycisk WYŚLIJ -->
+        <input type="submit" value="Wyślij">
+        <!-- Przycisk WYCZYŚĆ -->
+        <input type="reset" value="Wyczyść">
+        </div>  
+    </form>
+    <br>
+    <a href="index.html"> Powrót do strony głównej </a>
+</body>
+
+</html>
