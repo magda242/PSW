@@ -42,14 +42,14 @@
         RZECZNIK SCHRONISKA Aleksandra Cukier<br>
         e-mail: schronisko.ola@gmail.com
     </section>
-    <form action="mailto:schroniskowroclaw@gmil.com" method="post" enctype="text/plain">
+    <form action="mailto:schroniskowroclaw@gmil.com" method="post" autocomplete="on" enctype="text/plain" >
         <section>
             <mark>
                 <p>Napisz do nas!</p>
             </mark>
             <!--pola tekstowe -->
-            <label>Twoje imię: <input type="text" autofocus autocomplete="off"></label>(tekst)<br>
-            <label>Twoje nazwisko: <input type="text" required autocomplete="off"></label>(tekst, pole obowiązkowe)<br>
+            <label>Twoje imię: <input type="text" autofocus autocomplete="on"></label>(tekst)<br>
+            <label>Twoje nazwisko: <input type="text" required autocomplete="on"></label>(tekst, pole obowiązkowe)<br>
             <label>Miesiąc urodzin: <input list="miesiace">
                 <datalist id="miesiace">
                     <option value="styczeń">
@@ -66,8 +66,8 @@
                     <option value="grudzień">
                 </datalist>
             </label>(wybierz z listy)<br>
-            <label>Twój email: <input type="email" required autocomplete="email"></label>(format: nazwa@domena.com, pole obowiązkowe)<br>
-            <label>Twój telefon: <input type="tel" autocomplete ="tel" pattern="^[0-9]{3}-[0-9]{3}-[0-9]{3}$"></label>(format: ccc-ccc-ccc)<br>
+            <label>Twój email: <input type="email" autocomplete="off" required ></label>(format: nazwa@domena.com, pole obowiązkowe)<br>
+            <label>Twój telefon: <input type="tel" autocomplete ="off" pattern="^[0-9]{3}-[0-9]{3}-[0-9]{3}$"></label>(format: ccc-ccc-ccc)<br>
             <!-- komentarz (o powiększonych rozmiarach oraz z tekstem domyślnym) -->
             <p>Wyślij do nas wiadomość:</p>
             <textarea name="Wiadomosc" cols="50" rows="10">Proszę, wpisz tutaj swoją wiadomość...</textarea>
