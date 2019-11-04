@@ -1,0 +1,129 @@
+form
+{
+    border-style: outset;
+    border-width: thick;
+    border-color: darkred;
+}
+
+table th 
+{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+table tr:nth-child(even)
+{
+    background-color: #f2f2f2;
+}
+
+table tr:hover 
+{
+    background-color: #ddd;
+}
+table
+{
+overflow-x:auto;
+}
+
+#dogs th
+{
+    padding: 15px;
+  text-align: left;
+}
+
+#dogs th, #dogs td {
+    border-top: 1px solid #4CAF50;
+    border: 2px solid #1c87c9;
+    border-radius: 8px;
+
+  }
+  h1, p[style] 
+{
+    background-color: blueviolet;
+}
+h3
+{
+background-color: lightblue;
+}
+mark
+{
+font-style: italic;
+}
+input:required {
+    background-color: khaki;
+  }
+  
+input:checked {
+    height: 50px;
+    width: 50px;
+  }
+  input[type=text] {
+    width: 100px;
+    transition: ease-in-out, width .35s ease-in-out;
+  }
+  p:nth-last-child(2) {
+    background: whitesmoke;
+  }
+
+  a:link {
+    color: red;
+  }
+  
+  a:visited {
+    color: green;
+  }
+  
+  a:hover {
+    color: hotpink;
+    font: size 130%;
+  }
+  
+  a:active {
+    color: blue;
+  }
+  
+  article:empty
+  {
+background: thistle;
+  }
+  section:only-child {
+    background: #f7d1b3;
+  }
+  :not(div) {
+      justify-content: left;
+  }
+  p:first-child {
+    background-color: seashell;
+  }
+  div:target {
+    border: 2px solid #D4D4D4;
+    background-color: #e5eecc;
+  }
+  .tab div {
+    display: none;
+  }
+  
+  .tab div:target {
+    display: block;
+  }
+
+  input:enabled {
+    background: lightgreen;
+  }
+  input[type="text"]:disabled {
+    background: #dddddd;
+  }
+  p:last-of-type {
+    border-bottom-color: #ffc400;
+    font-family:monospace;
+  }
+  a:link {
+    color: turquoise;
+  }
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(227, 243, 248);
+    }
+  }
