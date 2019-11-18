@@ -1,9 +1,122 @@
+h1
+{
+  font-family: 'Lato', sans-serif;
+}
 form
 {
     border-style: outset;
     border-width: thick;
     border-color: darkred;
 }
+.container {
+  margin: 100px;
+}
+#cats
+{
+  transform: rotate(3deg);
+}
+.box {
+  background:pink;
+  border-radius: 5px;
+  display: inline-block;
+  height: 80px;
+  margin: 20px;
+  width: 80px;
+}
+.container:hover {
+    transform: scale(1.2);
+  
+}
+
+.box1 {
+  transition: all 1.3s;
+}
+
+.box2 {
+  transition: all 1.3s 0.5s;
+}
+
+.box3 {
+  transition: all 1.3s 1s;
+}
+
+#moving {
+  animation: mymove 5s infinite;
+}
+@-webkit-keyframes mymove {
+  from {top: 0px;}
+  to {top: 800px;}
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 800px;}
+}
+
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: linear-gradient(to top, black 0%, white 100%)
+}
+
+.footer {
+  background: lightgreen;
+}
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+  column-gap: 40px;
+  column-count: 2;
+  column-rule: solid blue;
+}
+
+.aside-1 {
+  background: peru;
+}
+
+.aside-2 {
+  background: mediumslateblue;
+}
+#anim {
+  width: 100%;
+  height: 100px;
+  background-color: lightsalmon;
+
+  animation-name: clr;
+  animation-duration: 4s;
+}
+@keyframes clr {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+body {
+  padding: 2em; 
+}
+
 
 table th 
 {
@@ -248,3 +361,30 @@ background: thistle;
             background-attachment: fixed; background-color: mediumaquamarine;}
 
   h1{ text-shadow: 2px 2px #535151;}
+
+
+
+  .cols3 h1 {
+    column-span:all;
+  }
+  
+      .cols3 {
+         width: 100%;
+         max-width: 600px;
+      }
+  
+      @media (min-width: 400px) {
+        .cols3 {
+  
+          column-count: 2;
+          column-gap: 20px;
+          column-rule: 1px solid #000;
+        }
+      }
+  
+      @media (min-width: 600px) {
+        .cols3 {
+
+          column-count: 3;
+        }
+      }
