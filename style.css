@@ -17,6 +17,7 @@ form
 }
 .box {
   background:pink;
+  background-image:linear-gradient(white, pink);
   border-radius: 5px;
   display: inline-block;
   height: 80px;
