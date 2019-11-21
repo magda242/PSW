@@ -4,9 +4,9 @@ h1
 }
 form
 {
-    border-style: outset;
-    border-width: thick;
-    border-color: darkred;
+  border-image-source: url(images/ramka.png);
+  border-image-repeat: repeat;
+  border-image-slice: 30;
 }
 .container {
   margin: 100px;
@@ -173,7 +173,7 @@ input:checked {
     height: 50px;
     width: 50px;
   }
-  input[type=text] {
+  input[type*=text] {
     width: 100px;
     transition: ease-in-out, width .35s ease-in-out;
   }
@@ -186,7 +186,7 @@ input:checked {
   }
   
   a:visited {
-    color: rgba(0, 255, 0, 0.3);
+    color: rgba(32, 5, 44, 0.3);
   }
   
   a:hover {
@@ -234,7 +234,7 @@ background: thistle;
     font-family:monospace;
   }
   a:link {
-    color: hsla(120, 100%, 50%, 0.3);
+    color: hsla(246, 88%, 16%, 0.3);
   } 
   @media only screen and (max-width: 600px) {
     body {
@@ -361,7 +361,7 @@ background: thistle;
   background-image: url(images/log.png); background-position: bottom right; background-repeat: no-repeat;
             background-attachment: fixed; background-color: mediumaquamarine;}
 
-  h1{ text-shadow: 2px 2px #535151;}
+  h1{ text-shadow: 2px -2px #535151;}
 
 
 
@@ -373,7 +373,13 @@ background: thistle;
          width: 100%;
          max-width: 600px;
       }
-  
+  @media (min-width: 600px) {
+        .cols3 {
+
+          column-count: 3;
+        }
+      }
+
       @media (min-width: 400px) {
         .cols3 {
   
@@ -383,9 +389,4 @@ background: thistle;
         }
       }
   
-      @media (min-width: 600px) {
-        .cols3 {
-
-          column-count: 3;
-        }
-      }
+      
