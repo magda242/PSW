@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="author" content="Magda Grygiel, Anna Szymanek" />
   <title> SCHRONISKO DLA BEZDOMNYCH ZWIERZĄT WE WROCŁAWIU </title>
-  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="style-index.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap&subset=latin-ext" rel="stylesheet">
 
   <meta name="description"
@@ -14,21 +14,55 @@
 </head>
 
 <body>
-  <h1 style="text-align:center"> SCHRONISKO DLA ZWIERZĄT WE WROCŁAWIU &ldquo;TOZ&rdquo; </h1>
+  <center><img id = "panel" src="images/nazwa.png" alt="nazwa strony" /></center>
   <section>
-    <nav>
-      <hr>
-      <ul>
-        <li><a href="albumkotow.html"> Album kotów </a></li>
-        <li><a href="albumpsow.html"> Album psów </a></li>
-        <li><a href="kontakt.html"> Kontakt </a></li>
-        <li><a href="formularz.html"> Formularz dla dobroczyńców </a></li>
-      </ul>
-      <hr>
-    </nav>
+    <div class="dropdown" style="center" >
+      <button class="dropbtn"> Menu </button>
+      <div class="dropdown-content">
+          <ol id="menu">
+              <li><a href="#">Albumy</a>
+                <ul>
+                  <li><a href="albumpsow.html">Album psów</a>
+                    <ol>
+                      <li><a href="#">Frytka </a></li>
+                      <li><a href="#"> Tarzan </a></li>
+                      <li><a href="#">Opiłka </a></li>
+                      <li><a href="#">Musia </a></li>
+                      <li><a href="#">Gajek </a></li>
+                    </ol>
+                  </li>
+                  <li><a href="alboumkotow.html">Album kotów</a>
+                    <ol>
+                      <li><a href="#">Koty </a></li>
+                      <li><a href="#">Psy </a></li>
+                    </ol>
+                  </li>
+                </ul>
+              </li>
+          
+              <li><a href="#">Wolontariat </a>
+                <ul>
+                  <li><a href="formularz.html">Formularz dla dobroczynców </a></li>
+                  <li><a href="#">Działania doraźne </a>
+                    <ol>
+                      <li><a href="#">Transport zwierząt </a></li>
+                      <li><a href="#">Przewożenie wolontariuszy</a></li>
+                      <li><a href="#">Dokarmianie</a></li>
+                      <li><a href="#">Sprzątanie</a></li>
+                    </ol>
+                  </li>
+                </ul>
+              </li>
+            <li><a href="kontakt.html">Kontakt </a></li>
+            <li><a href="options.html">Opcje </a></li>
+            <li><a href = "gra.html">Gra</a></li>
+        </ol>
+      </div>
+    </div>
   </section>
-  <img id = "cats" src="images/kotki.jpg" alt="Koty miejskie" width="1200" height="852" />
-  <a href="kontakt.html" target ="_blank"><br> Skontaktuj się z nami mailowo</a>
+<br>
+  <img id = "cats1" src="images/kotki.jpg" alt="Koty miejskie1" width="600" height="300" />
+  <img id = "cats2" src="images/Pipi.jpg" alt="Koty miejskie2" width="600" height="300" />
 
   <article>
     <br> <br> Los kotów miejskich
@@ -53,65 +87,7 @@
   </article>
 
   
-  <div class="dropdown">
-    <button class="dropbtn"> Formy pomocy </button>
-    <div class="dropdown-content">
- 
-        <ol id="menu">
-            <li><a href="#">Dom tymczasowy</a>
-              <ul>
-        
-                <li><a href="#">Historie z domów tymczasowych </a>
-                  <ol>
-                    <li><a href="#">Frytka </a></li>
-                    <li><a href="#"> Tarzan </a></li>
-                    <li><a href="#">Opiłka </a></li>
-                    <li><a href="#">Musia </a></li>
-                    <li><a href="#">Gajek </a></li>
-                  </ol>
-                </li>
-        
-                <li><a href="#">Przemiany </a>
-                  <ol>
-                    <li><a href="#">Koty </a></li>
-                    <li><a href="#">Psy </a></li>
-                  </ol>
-                </li>
-        
-                <li><a href="#">Korzyści </a></li>
-                <li><a href="#">Wymagania i umowy </a></li>
-              </ul>
-            </li>
-        
-            <li><a href="#">Wolontariat </a>
-              <ul>
-                <li><a href="#">Marketing </a></li>
-        
-                <li><a href="#">Działania doraźne </a>
-                  <ol>
-                    <li><a href="#">Transport zwierząt </a></li>
-                    <li><a href="#">Przewożenie wolontariuszy</a></li>
-                    <li><a href="#">Dokarmianie</a></li>
-                    <li><a href="#">Sprzątanie</a></li>
-                  </ol>
-                </li>
-        
-                <li><a href="#">Dyżury </a></li>
-              </ul>
-            </li>
-        
-            <li><a href="#">Zbiórki</a></li>
-
-            <li><a href="#"> Adopcja </a>
-              <ul>
-                <li><a href="#">Wirtualna </a></li>
-                <li><a href="#">Fizyczna </a></li>
-              </ul>
-            </li>
-          </ol>
-
-    </div>
-  </div>
+  
 
 <br>
   <section>
