@@ -49,7 +49,10 @@ function game() {
             }
             if(moveCounter===8) {
                 document.querySelector('.result').innerText = 'remis!'
+                finish = true;
             }
+
+            if ()
             moveCounter++;
             opponentPlayer = players[((Math.abs(moveCounter - 1)) % 2)];
             currentPlayer = players[(moveCounter % 2)];
