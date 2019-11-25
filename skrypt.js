@@ -67,10 +67,10 @@ function game() {
 
         let cells = Array.from(document.querySelectorAll('.board__cell'))
             .map(cell => {
-                if (isTargetKolko(cell)) return {
+                if (isTargetPies(cell)) return {
                     name: 'pies'
                 }
-                if (isTargetKrzyzyk(cell)) return {
+                if (isTargetKot(cell)) return {
                     name: 'kot'
                 }
                 return {
@@ -91,10 +91,11 @@ function game() {
         }
         return true;
     }
+
     function getRandomColor() {
         var letters = '0123456789ABCDEF';
         var color = '#';
-        document.getElementById("changeTheme").innerHTML+= "");"
+        document.getElementById("changeTheme").innerHTML+= ":)"
         for (var i = 0; i < 6; i++) {
           color += letters[Math.floor(Math.random() * 16)];
         }
@@ -110,16 +111,16 @@ function game() {
         return target.classList.contains("board__cell");
     }
 
-    function isTargetKrzyzyk(target) {
-        return target.classList.contains("board__cell--krzyzyk");
+    function isTargetKot(target) {
+        return target.classList.contains("board__cell--kot");
     }
 
-    function isTargetKolko(target) {
-        return target.classList.contains("board__cell--kolko");
+    function isTargetPies(target) {
+        return target.classList.contains("board__cell--pies");
     }
 
     function isCellEmpty(target) {
-        return !isTargetKolko(target) && !isTargetKrzyzyk(target);
+        return !isTargetPies(target) && !isTargetKot(target);
     }
 }
 document.writeln("Dziękujemy za odwiedziny!")
