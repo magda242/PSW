@@ -91,6 +91,20 @@ function game() {
         }
         return true;
     }
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        document.getElementById("changeTheme").innerHTML+= "");"
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }      
+
+    document.getElementById("changeTheme").addEventListener("click", function(){
+       color = getRandomColor();
+        document.body.style.backgroundColor = color;
+    });
 
     function isTargetCorrect(target) {
         return target.classList.contains("board__cell");
@@ -108,5 +122,9 @@ function game() {
         return !isTargetKolko(target) && !isTargetKrzyzyk(target);
     }
 }
-
+document.writeln("Dziękujemy za odwiedziny!")
 window.onload = game;
+var name = prompt("Jak masz na imię?");
+if ((Math.random(Math.floor(parseInt(5,10)))<3)){
+   window.alert(name + "? Ładne imię!");
+}
