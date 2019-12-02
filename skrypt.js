@@ -11,15 +11,12 @@ function game() {
     ];
 
     let win = [
-        //kombinacje poziome
         [0, 1, 2],
         [3, 4, 5],
         [6, 7, 8],
-        //kombinacje pionowe
         [0, 3, 6],
         [1, 4, 7],
         [2, 5, 8],
-        //kombinacje ukosne
         [0, 4, 8],
         [2, 4, 6]
     ]
@@ -126,6 +123,6 @@ function game() {
 document.writeln("Dziękujemy za odwiedziny!")
 window.onload = game;
 var name = prompt("Jak masz na imię?");
-if ((Math.random(Math.floor(parseInt(5,10)))<3)){
+if ((Math.random(Math.floor(parseInt(5,10)))<parseFloat("0.0317E+2"))){
    window.alert(name + "? Ładne imię!");
 }
